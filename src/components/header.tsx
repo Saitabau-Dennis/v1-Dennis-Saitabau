@@ -6,15 +6,15 @@ import { Home, User, Briefcase, FolderGit2, Mail } from "lucide-react";
 
 export default function Header() {
   return (
-    <header className="w-full pt-10 pb-0">
+    <header className="w-full pt-6 pb-0">
       <nav className="container mx-auto max-w-7xl flex items-center justify-between px-6">
 
         {/* Left: Avatar & Name */}
         <div className="flex items-center gap-4">
-          <div className="h-12 w-12 overflow-hidden rounded-full bg-zinc-800 border-2 border-white/10">
+          <div className="h-14 w-14 overflow-hidden rounded-full bg-zinc-800 border-2 border-white/10">
              <img src="/profile.jpg" alt="Profile" className="h-full w-full object-cover" />
           </div>
-          <span className="hidden md:block text-xl font-medium text-zinc-100 font-mono tracking-tight">Dennis Saitabau</span>
+          <span className="hidden md:block text-2xl font-bold text-white tracking-tighter">Dennis Saitabau</span>
         </div>
 
         {/* Right: Support Button */}

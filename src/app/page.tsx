@@ -33,8 +33,8 @@ export default function Home() {
                <Mail className="h-8 w-8" strokeWidth={2.5} />
              </Link>
            </div>
-           <p className="text-sm text-zinc-500">
-             &copy; {new Date().getFullYear()} Dennis Saitabau. All rights reserved.
+           <p className="text-sm font-medium text-zinc-400">
+             &copy; {new Date().getFullYear()} <span className="text-white font-bold">Dennis Saitabau</span>. All rights reserved.
            </p>
         </div>
       </footer>

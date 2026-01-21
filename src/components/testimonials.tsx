@@ -71,22 +71,25 @@ export default function Testimonials() {
             {[...testimonials, ...testimonials].map((testimonial, index) => (
               <div
                 key={index}
-                className="relative w-[350px] md:w-[450px] min-h-[300px] flex-shrink-0 flex flex-col justify-between rounded-3xl border border-white/10 bg-zinc-900/50 p-8 shadow-xl backdrop-blur-sm transition-all hover:border-white/20 hover:bg-zinc-800/50"
+                className="relative w-[350px] md:w-[450px] min-h-[280px] flex-shrink-0 flex flex-col justify-between rounded-3xl border border-white/5 bg-zinc-900/80 p-10 shadow-2xl backdrop-blur-xl transition-all hover:border-white/10 hover:bg-zinc-900 group"
               >
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/5 to-transparent opacity-0 transition-opacity hover:opacity-100 pointer-events-none" />
-
+                {/* Subtle top highlight */}
+                <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-50" />
+                
                 <blockquote className="relative flex-1">
-                  <p className="text-l leading-relaxed text-zinc-300">
-                    “{testimonial.quote}”
+                  <span className="absolute -top-4 -left-2 text-6xl text-white/5 font-serif">“</span>
+                  <p className="text-lg leading-relaxed text-zinc-300 font-light relative z-10">
+                    {testimonial.quote}
                   </p>
                 </blockquote>
-                <div className="mt-8 flex items-center gap-4 relative z-10">
-                  <div className="h-10 w-10 rounded-full bg-zinc-800 border border-white/10 flex items-center justify-center text-xs font-bold text-zinc-500">
+                
+                <div className="mt-8 flex items-center gap-4 relative z-10 border-t border-white/5 pt-6">
+                  <div className="h-12 w-12 rounded-full bg-gradient-to-br from-zinc-800 to-zinc-900 border border-white/10 flex items-center justify-center text-sm font-bold text-white shadow-inner ring-1 ring-white/5 group-hover:ring-white/10 transition-all">
                       {testimonial.name[0]}
                   </div>
-                  <div className="text-sm leading-6">
-                      <div className="font-bold text-white">{testimonial.name}</div>
-                      <div className="text-zinc-500">{testimonial.role}</div>
+                  <div className="flex flex-col">
+                      <div className="font-bold text-white tracking-wide text-sm">{testimonial.name}</div>
+                      <div className="text-zinc-500 text-xs uppercase tracking-wider font-mono mt-0.5">{testimonial.role}</div>
                   </div>
                 </div>
               </div>

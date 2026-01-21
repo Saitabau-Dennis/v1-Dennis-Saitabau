@@ -2,10 +2,10 @@ import SectionContainer from "./sectioncontainer";
 
 export default function Stats() {
   const stats = [
-    { label: "Years Experience", value: "5+" },
-    { label: "Projects Shipped", value: "50+" },
-    { label: "Awards Won", value: "12" },
-    { label: "Happy Clients", value: "30+" },
+    { label: "Git Commits", value: "300+" },
+    { label: "Projects Built", value: "10+" },
+    { label: "Technologies", value: "12+" },
+    { label: "Cups of Coffee", value: "∞" },
   ];
 
   return (
