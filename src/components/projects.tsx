@@ -47,17 +47,17 @@ export default function Projects() {
               <div className="flex flex-col gap-2">
                 <div className="flex flex-col gap-1">
                    <div className="flex items-center gap-2">
-                    <h3 className="text-xl font-bold text-white tracking-tight">{project.title}</h3>
+                    <h3 className="text-2xl font-bold text-white tracking-tight">{project.title}</h3>
                     <a
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="ml-1 text-white"
                     >
-                      <Link size={16} />
+                      <Link size={18} />
                     </a>
                    </div>
-                   <p className="text-zinc-400 text-sm leading-relaxed line-clamp-2">{project.description}</p>
+                   <p className="text-zinc-400 text-base leading-relaxed line-clamp-2">{project.description}</p>
                 </div>
                 <div className="flex flex-wrap gap-2 mt-2">
                    {project.tags.map(tag => (

@@ -48,14 +48,14 @@ export default function Experience() {
 
                     <div className="flex flex-col flex-1 gap-1 min-w-0">
                        <div className="flex items-center justify-between gap-2">
-                           <h3 className="text-lg font-bold text-white tracking-tight group-hover:text-blue-400 transition-colors truncate">
+                           <h3 className="text-xl font-bold text-white tracking-tight group-hover:text-blue-400 transition-colors truncate">
                               {exp.company}
                            </h3>
                            <span className="font-mono text-xs text-zinc-500 uppercase tracking-wider whitespace-nowrap">{exp.period}</span>
                        </div>
 
                        <div className="flex items-center justify-between gap-4">
-                           <p className="text-zinc-400 text-sm font-medium truncate">
+                           <p className="text-zinc-400 text-base font-medium truncate">
                               {exp.role}
                            </p>
                            <div className="shrink-0">
@@ -68,13 +68,16 @@ export default function Experience() {
                    {isExpanded && (
                      <div className="overflow-hidden">
                         <div className="mt-4 pl-0 sm:pl-16 max-w-3xl">
-                          <p className="text-foreground mb-6 leading-relaxed text-base font-normal">
-                             {exp.description}
-                          </p>
+                          <div className="flex items-start gap-3 mb-6">
+                            <div className={`mt-2.5 h-1.5 w-1.5 rounded-full ${exp.color} shrink-0`} />
+                            <p className="text-foreground leading-relaxed text-lg font-normal">
+                               {exp.description}
+                            </p>
+                          </div>
 
                           <ul className="flex flex-col gap-3 mb-6">
                              {exp.achievements.map((item, i) => (
-                                <li key={i} className="text-zinc-300 flex items-start gap-3 text-sm leading-relaxed">
+                                <li key={i} className="text-zinc-300 flex items-start gap-3 text-base leading-relaxed">
                                    <div className={`mt-1.5 h-1.5 w-1.5 rounded-full ${exp.color} shrink-0`} />
                                    <span>{item}</span>
                                 </li>

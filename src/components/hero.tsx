@@ -79,24 +79,18 @@ export default function Hero() {
         <div className="mt-6 w-full sm:mt-10">
            <div className="h-[250px] w-full overflow-hidden rounded-[3rem] bg-zinc-950 border border-white/10 sm:h-[350px] relative group shadow-2xl shadow-blue-900/20 ring-2 ring-white/20 hover:ring-white/30 transition-all duration-500">
               {/* Animated Gradient Background */}
-              <div className="absolute inset-0 opacity-80 group-hover:opacity-100 transition-opacity duration-700">
-                <Silk
-                  speed={4}
-                  scale={1.2}
-                  color="#0d43e3"
-                  noiseIntensity={1.2}
-                  rotation={0}
-                />
+              <div className="absolute inset-0">
+                  <Silk
+                    speed={8.9}
+                    scale={1.2}
+                    color="#1344d8"
+                    noiseIntensity={0.5}
+                    rotation={5.2}
+                  />
               </div>
-
-              {/* Vignette & Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-zinc-950/20 pointer-events-none" />
-              <div className="absolute inset-0 bg-white/5 backdrop-blur-[1px] group-hover:backdrop-blur-none transition-all duration-700" />
               
-              {/* Content Placeholder (Optional - can be removed or used for text/image) */}
+              {/* Content Placeholder */}
               <div className="absolute bottom-8 left-8 sm:bottom-12 sm:left-12 max-w-xl p-4">
-                {/* <h3 className="text-2xl sm:text-4xl font-bold text-white mb-2">Visualizing Complexity</h3> */}
-                {/* <p className="text-zinc-400">Designing interfaces that feel like magic.</p> */}
               </div>
            </div>
         </div>

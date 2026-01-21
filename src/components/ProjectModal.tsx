@@ -32,13 +32,13 @@ export const ProjectModal = ({ project, onClose }) => {
           
           <div className="relative z-10">
             <div className="mb-6">
-                <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+                <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
                 {project.title}
                 </h2>
             </div>
             
-            <div className="prose prose-invert prose-sm max-w-none">
-                <p className="text-zinc-400 text-base leading-relaxed">
+            <div className="prose prose-invert max-w-none">
+                <p className="text-zinc-400 text-lg leading-relaxed">
                 {project.detailedDescription}
                 </p>
             </div>

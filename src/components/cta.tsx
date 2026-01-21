@@ -6,20 +6,20 @@ import Silk from "./Silk";
 
 export default function CTA() {
   return (
-    <section id="contact" className="relative w-full py-24 sm:py-32 overflow-hidden">
+    <section id="contact" className="relative w-full py-20 sm:py-24 overflow-hidden">
       {/* Gradient/Silk Background */}
       <div className="absolute inset-0 -z-10">
-        <Silk
-          speed={5}
-          scale={1}
-          color="#0d43e3"
-          noiseIntensity={1.5}
-          rotation={0}
-        />
+          <Silk
+            speed={8.9}
+            scale={1.2}
+            color="#1344d8"
+            noiseIntensity={0.5}
+            rotation={5.2}
+          />
       </div>
       <div className="container mx-auto px-6 max-w-3xl flex flex-col items-center text-center relative z-10">
-        <h2 className="text-5xl sm:text-7xl font-bold text-white mb-6 tracking-tighter">Ready to collaborate?</h2>
-        <p className="text-lg sm:text-2xl text-zinc-300 mb-12 max-w-xl">Let's connect and create something amazing together.</p>
+        <h2 className="text-4xl sm:text-6xl font-bold text-white mb-6 tracking-tighter">Ready to collaborate?</h2>
+        <p className="text-lg sm:text-xl text-zinc-300 mb-10 max-w-xl">Let's connect and create something amazing together.</p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:gap-6 max-w-md mx-auto">
           <a
             href="mailto:dennisntete28@gmail.com"
