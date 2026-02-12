@@ -33,7 +33,7 @@ export const LoadingScreen = () => {
     const timer = setTimeout(() => {
       setIndex(index + 1);
     }, 600); // Change word every 600ms
-    
+
     return () => clearTimeout(timer);
   }, [index]);
 
@@ -48,7 +48,7 @@ export const LoadingScreen = () => {
     <AnimatePresence>
       {!complete && (
         <motion.div
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-zinc-950 text-white"
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#f8f9fa] text-zinc-900"
           exit={{ opacity: 0, transition: { duration: 2, ease: "easeInOut" } }}
         >
           <motion.h1

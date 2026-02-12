@@ -41,7 +41,7 @@ export default function Testimonials() {
 
   return (
     <section className="pb-12 pt-2 sm:pb-24 overflow-hidden">
-      <div className="mx-auto h-px w-full max-w-7xl bg-gray-800/50 mb-8" />
+      <div className="mx-auto h-px w-full max-w-7xl bg-zinc-200 mb-8" />
 
       <div className="container mx-auto max-w-7xl px-6">
         <div className="flex items-center gap-3 mb-12">
@@ -54,9 +54,9 @@ export default function Testimonials() {
 
       <div className="relative w-full">
           {/* Left Fade */}
-          <div className="hidden md:block absolute left-0 top-0 bottom-0 z-10 w-24 md:w-40 bg-gradient-to-r from-[#0a0a0a] to-transparent pointer-events-none" />
+          <div className="hidden md:block absolute left-0 top-0 bottom-0 z-10 w-24 md:w-40 bg-gradient-to-r from-[#f8f9fa] to-transparent pointer-events-none" />
           {/* Right Fade */}
-          <div className="hidden md:block absolute right-0 top-0 bottom-0 z-10 w-24 md:w-40 bg-gradient-to-l from-[#0a0a0a] to-transparent pointer-events-none" />
+          <div className="hidden md:block absolute right-0 top-0 bottom-0 z-10 w-24 md:w-40 bg-gradient-to-l from-[#f8f9fa] to-transparent pointer-events-none" />
 
           <motion.div
             className="flex gap-6 w-max"
@@ -71,25 +71,25 @@ export default function Testimonials() {
             {[...testimonials, ...testimonials].map((testimonial, index) => (
               <div
                 key={index}
-                className="relative w-[350px] md:w-[450px] min-h-[280px] flex-shrink-0 flex flex-col justify-between rounded-3xl border border-white/5 bg-zinc-900/80 p-10 shadow-2xl backdrop-blur-xl transition-all hover:border-white/10 hover:bg-zinc-900 group"
+                className="relative w-[350px] md:w-[450px] min-h-[280px] flex-shrink-0 flex flex-col justify-between rounded-3xl border border-zinc-200 bg-white p-10 shadow-sm transition-all hover:border-zinc-300 hover:shadow-md group"
               >
                 {/* Subtle top highlight */}
-                <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-50" />
-                
+                <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-zinc-300 to-transparent opacity-50" />
+
                 <blockquote className="relative flex-1">
-                  <span className="absolute -top-4 -left-2 text-6xl text-white/5 font-serif">“</span>
-                  <p className="text-lg leading-relaxed text-zinc-300 font-light relative z-10">
+                  <span className="absolute -top-4 -left-2 text-6xl text-zinc-200 font-serif">&ldquo;</span>
+                  <p className="text-lg leading-relaxed text-zinc-700 font-light relative z-10">
                     {testimonial.quote}
                   </p>
                 </blockquote>
-                
-                <div className="mt-8 flex items-center gap-4 relative z-10 border-t border-white/5 pt-6">
-                  <div className="h-12 w-12 rounded-full bg-gradient-to-br from-zinc-800 to-zinc-900 border border-white/10 flex items-center justify-center text-sm font-bold text-white shadow-inner ring-1 ring-white/5 group-hover:ring-white/10 transition-all">
+
+                <div className="mt-8 flex items-center gap-4 relative z-10 border-t border-zinc-100 pt-6">
+                  <div className="h-12 w-12 rounded-full bg-gradient-to-br from-zinc-100 to-zinc-200 border border-zinc-200 flex items-center justify-center text-sm font-bold text-zinc-700 shadow-inner ring-1 ring-zinc-200 group-hover:ring-zinc-300 transition-all">
                       {testimonial.name[0]}
                   </div>
                   <div className="flex flex-col">
-                      <div className="font-bold text-white tracking-wide text-sm">{testimonial.name}</div>
-                      <div className="text-zinc-500 text-xs uppercase tracking-wider font-mono mt-0.5">{testimonial.role}</div>
+                      <div className="font-bold text-zinc-900 tracking-wide text-sm">{testimonial.name}</div>
+                      <div className="text-zinc-600 text-xs uppercase tracking-wider font-mono mt-0.5">{testimonial.role}</div>
                   </div>
                 </div>
               </div>

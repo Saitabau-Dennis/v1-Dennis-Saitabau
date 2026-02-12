@@ -29,7 +29,7 @@ export default function Projects() {
               className={`group flex flex-col gap-4 ${project.colSpan} cursor-pointer`}
               onClick={() => setSelectedProject(project)}
             >
-              <div className={`relative h-64 sm:h-80 w-full overflow-hidden rounded-[2rem] bg-zinc-900/50 border border-white/5 transition-all duration-500 hover:bg-zinc-900`}>
+              <div className={`relative h-64 sm:h-80 w-full overflow-hidden rounded-[2rem] bg-zinc-100 border border-zinc-200 transition-all duration-500 hover:bg-zinc-50`}>
                  {project.image ? (
                    <Image
                      src={project.image}
@@ -39,7 +39,7 @@ export default function Projects() {
                    />
                  ) : (
                    <div className="absolute inset-0 flex items-center justify-center opacity-20 group-hover:opacity-40 transition-opacity">
-                      <FolderGit2 size={48} className="text-white" />
+                      <FolderGit2 size={48} className="text-zinc-400" />
                    </div>
                  )}
               </div>
@@ -47,21 +47,21 @@ export default function Projects() {
               <div className="flex flex-col gap-2">
                 <div className="flex flex-col gap-1">
                    <div className="flex items-center gap-2">
-                    <h3 className="text-2xl font-bold text-white tracking-tight">{project.title}</h3>
+                    <h3 className="text-2xl font-bold text-zinc-900 tracking-tight">{project.title}</h3>
                     <a
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="ml-1 text-white"
+                      className="ml-1 text-zinc-900"
                     >
                       <Link size={18} />
                     </a>
                    </div>
-                   <p className="text-zinc-400 text-base leading-relaxed line-clamp-2">{project.description}</p>
+                   <p className="text-zinc-600 text-base leading-relaxed line-clamp-2">{project.description}</p>
                 </div>
                 <div className="flex flex-wrap gap-2 mt-2">
                    {project.tags.map(tag => (
-                      <span key={tag} className="text-xs font-mono text-zinc-500 border border-zinc-800 rounded-full px-3 py-1 bg-zinc-900/50">
+                      <span key={tag} className="text-xs font-mono text-zinc-600 border border-zinc-200 rounded-full px-3 py-1 bg-zinc-50">
                         {tag}
                       </span>
                    ))}

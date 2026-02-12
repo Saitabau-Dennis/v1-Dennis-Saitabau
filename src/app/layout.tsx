@@ -4,11 +4,11 @@ import Header from "@/components/header";
 import { LoadingScreen } from "@/components/loading-screen";
 import "./globals.css";
 
-const cabinetGrotesk = localFont({
-  src: "../../public/fonts/CabinetGrotesk-Variable.woff2",
+const satoshi = localFont({
+  src: "../../public/fonts/Satoshi-Variable.woff2",
   variable: "--font-cabinet",
   display: "swap",
-  weight: "100 900",
+  weight: "300 900",
 });
 
 export const metadata: Metadata = {
@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${cabinetGrotesk.variable} antialiased font-sans`}
+        className={`${satoshi.variable} antialiased font-sans`}
       >
         <LoadingScreen />
         <Header />

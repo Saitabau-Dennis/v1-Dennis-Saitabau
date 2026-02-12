@@ -15,7 +15,7 @@ export default function SectionContainer({ children, className, containerClassNa
   return (
     <section id={id} className={cn("py-12 px-2 sm:px-4", containerClassName)}>
       {/* Centered Separator */}
-      {withSeparator && <div className="mx-auto h-px w-full max-w-7xl bg-gray-800/50" />}
+      {withSeparator && <div className="mx-auto h-px w-full max-w-7xl bg-zinc-200" />}
 
       <div
         className={cn(

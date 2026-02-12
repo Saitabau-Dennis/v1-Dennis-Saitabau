@@ -14,10 +14,10 @@ export default function Stats() {
         <div className="grid grid-cols-2 gap-12 md:grid-cols-4">
           {stats.map((stat, index) => (
             <div key={index} className="flex flex-col items-center justify-center text-center">
-              <dt className="order-2 mt-2 text-sm font-medium leading-6 text-zinc-500 font-mono uppercase tracking-wider whitespace-nowrap">
+              <dt className="order-2 mt-2 text-sm font-medium leading-6 text-zinc-600 font-mono uppercase tracking-wider whitespace-nowrap">
                 {stat.label}
               </dt>
-              <dd className="order-1 text-4xl font-medium tracking-tight text-white sm:text-5xl">
+              <dd className="order-1 text-4xl font-medium tracking-tight text-zinc-900 sm:text-5xl">
                 {stat.value}
               </dd>
             </div>

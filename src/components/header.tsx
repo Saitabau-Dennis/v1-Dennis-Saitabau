@@ -11,16 +11,16 @@ export default function Header() {
 
         {/* Left: Avatar & Name */}
         <div className="flex items-center gap-4">
-          <div className="h-14 w-14 overflow-hidden rounded-full bg-zinc-800 border-2 border-white/10">
+          <div className="h-14 w-14 overflow-hidden rounded-full bg-zinc-100 border-2 border-zinc-200">
              <img src="/profile.jpg" alt="Profile" className="h-full w-full object-cover" />
           </div>
-          <span className="hidden md:block text-2xl font-bold text-white tracking-tighter">Dennis Saitabau</span>
+          <span className="hidden md:block text-l font-normal text-zinc-900 tracking-tighter">Dennis Saitabau</span>
         </div>
 
         {/* Right: Support Button */}
         <Link href="https://buymeacoffee.com/dennisntetb" target="_blank">
             <button
-              className="rounded-full bg-zinc-900 border border-white/10 px-8 py-4 text-base font-medium text-zinc-200 transition-colors hover:bg-white/10 hover:text-white flex items-center gap-2"
+              className="rounded-full bg-white border border-zinc-200 px-5 py-2.5 text-sm font-medium text-zinc-800 transition-colors hover:bg-zinc-50 hover:text-zinc-900 flex items-center gap-2 shadow-sm ring-2 ring-zinc-200 ring-offset-2 ring-offset-[#f8f9fa]"
             >
               <div className="h-2 w-2 rounded-full bg-green-500" />
               Support my work
