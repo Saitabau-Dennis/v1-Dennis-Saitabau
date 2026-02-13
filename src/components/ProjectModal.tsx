@@ -3,7 +3,20 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ArrowUpRight, Github } from "lucide-react";
 
-export const ProjectModal = ({ project, onClose }) => {
+interface Project {
+  title: string;
+  detailedDescription: string;
+  tags: string[];
+  link: string;
+  githubLink: string;
+}
+
+interface ProjectModalProps {
+  project: Project | null;
+  onClose: () => void;
+}
+
+export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
   if (!project) return null;
 
   return (

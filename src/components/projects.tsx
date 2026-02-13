@@ -7,8 +7,10 @@ import SectionContainer from "./sectioncontainer";
 import { ProjectModal } from "./ProjectModal";
 import { projects } from "@/data/projects";
 
+type Project = typeof projects[0];
+
 export default function Projects() {
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
     <SectionContainer id="projects" className="px-0 sm:px-6">
