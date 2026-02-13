@@ -25,14 +25,14 @@ export default function Hero() {
             <div className="mt-12 hidden md:flex flex-row items-center gap-4">
                <a
                 href="#contact"
-                className="group relative inline-flex h-16 items-center justify-center overflow-hidden rounded-full bg-zinc-900 px-12 font-medium text-lg text-white transition-all hover:bg-zinc-800 whitespace-nowrap"
+                className="group relative inline-flex h-16 items-center justify-center overflow-hidden rounded-full bg-zinc-900 px-12 font-medium text-xl text-white transition-all hover:bg-zinc-800 whitespace-nowrap"
               >
                 <span className="relative z-10">Book a call</span>
               </a>
               <a
                 href="/files/Resume..pdf"
                 target="_blank"
-                className="group inline-flex h-16 items-center justify-center rounded-full border-[1.5px] border-zinc-900 bg-transparent px-12 font-medium text-lg text-zinc-900 transition-all hover:bg-zinc-900 hover:text-white whitespace-nowrap"
+                className="group inline-flex h-16 items-center justify-center rounded-full border-[1.5px] border-zinc-900 bg-transparent px-12 font-medium text-xl text-zinc-900 transition-all hover:bg-zinc-900 hover:text-white whitespace-nowrap"
                 >
                 <span>View resume</span>
                 </a>
